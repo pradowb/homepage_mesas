@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #f5f2ec;
+    color: #1a1a18;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-bone font-sans text-base text-ink;
+  }
+  ::selection {
+    background: #6b4a32;
+    color: #f5f2ec;
+  }
+  :focus-visible {
+    outline: 1px solid currentColor;
+    outline-offset: 4px;
+  }
+  em {
+    font-style: italic;
+  }
+}
+
+@layer components {
+  /* Espaçamento entre secções: ~104px mobile, 160px tablet, 220px desktop (metade em cima, metade em baixo) */
+  .section {
+    padding-block: 3.25rem;
+  }
+  /* Secções escuras levam o espaçamento completo por dentro */
+  .section-dark {
+    padding-block: 6.5rem;
+  }
+  @media (min-width: 768px) {
+    .section { padding-block: 5rem; }
+    .section-dark { padding-block: 10rem; }
+  }
+  @media (min-width: 1280px) {
+    .section { padding-block: 6.875rem; }
+    .section-dark { padding-block: 12.5rem; }
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+/* Animações de entrada: estado inicial só quando há JS (classe .js no <html>) */
+html.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+/* Hero: reveal linha a linha em CSS puro — começa no primeiro paint, sem esperar pela hidratação (LCP) */
+@keyframes line-up {
+  from { transform: translateY(105%); }
+  to { transform: translateY(0); }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.line-mask {
+  display: block;
+  overflow: hidden;
+  /* espaço para descendentes e itálicos do serifado */
+  padding: 0 0.12em 0.12em 0;
+  margin-bottom: -0.12em;
+}
+.line-inner {
+  display: block;
+  animation: line-up 1s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: calc(var(--i, 0) * 110ms + 120ms);
+}
+.hero-fade {
+  animation: fade-up 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 0.65s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

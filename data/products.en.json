@@ -1,0 +1,30 @@
+{
+  "_note": "Traduções inglesas dos produtos, por handle. Na Shopify isto vem da app Translate & Adapt, pedido com @inContext(language: EN). Imagens: altText por url.",
+  "products": {
+    "mesa-resina-branca-com-pinhas": {
+      "title": "White Resin Table with Pine Cones",
+      "images": {
+        "/images/mesa-resina-branca.webp": "Pale solid wood table with a central band of translucent white resin and three embedded pine cones, seen in perspective with soft side light",
+        "/images/mesa-centro-resina-branca-base-x.webp": "The same table seen from the side in a living room: pale solid wood top with a band of translucent white resin and three pine cones, on a wooden X base and a sisal rug"
+      }
+    },
+    "mesa-de-centro-resina-azul": {
+      "title": "Blue Resin Coffee Table",
+      "images": {
+        "/images/mesa-resina-azul.webp": "Coffee table in reddish solid wood with a central band of blue resin and trapezoidal wooden legs, in a room with a sofa and rug"
+      }
+    },
+    "mesa-resina-magenta": {
+      "title": "Magenta Resin Table",
+      "images": {
+        "/images/mesa-resina-magenta.webp": "Pale solid wood table with an irregular central vein of magenta resin and black steel legs, on a marble floor"
+      }
+    },
+    "mesa-de-centro-resina-verde-agua": {
+      "title": "Aqua Green Resin Coffee Table",
+      "images": {
+        "/images/mesa-centro-resina-verde-agua.webp": "Coffee table in reddish solid wood with two veins of translucent aqua green resin and a trapezoidal wooden base, on a sisal rug in a living room with a sofa and natural light"
+      }
+    }
+  }
+}

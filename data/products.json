@@ -1,0 +1,251 @@
+{
+  "_note": "Forma da Shopify Storefront API. Valores entre [ ] e price.amount=null são placeholders (a Storefront API devolve sempre amount como string). Para marcar uma peça como vendida: availableForSale=false no produto e na variante.",
+  "products": [
+    {
+      "id": "gid://shopify/Product/1001",
+      "handle": "mesa-resina-branca-com-pinhas",
+      "title": "Mesa Resina Branca com Pinhas",
+      "productType": "[categoria]",
+      "description": "[Descrição da peça]",
+      "availableForSale": true,
+      "totalInventory": 1,
+      "tags": [
+        "peca-unica"
+      ],
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": null,
+          "currencyCode": "EUR"
+        }
+      },
+      "featuredImage": {
+        "url": "/images/mesa-resina-branca.webp",
+        "altText": "Mesa em madeira maciça clara com faixa central de resina branca translúcida e três pinhas incrustadas, vista em perspetiva com luz natural lateral",
+        "width": 1086,
+        "height": 1448
+      },
+      "images": {
+        "nodes": [
+          {
+            "url": "/images/mesa-resina-branca.webp",
+            "altText": "Mesa em madeira maciça clara com faixa central de resina branca translúcida e três pinhas incrustadas, vista em perspetiva com luz natural lateral",
+            "width": 1086,
+            "height": 1448
+          },
+          {
+            "url": "/images/mesa-centro-resina-branca-base-x.webp",
+            "altText": "A mesma mesa vista de lado numa sala de estar: tampo em madeira maciça clara com faixa de resina branca translúcida e três pinhas, sobre base em X de madeira e tapete de sisal",
+            "width": 1374,
+            "height": 1145
+          }
+        ]
+      },
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/2001",
+            "title": "Default Title",
+            "availableForSale": true,
+            "quantityAvailable": 1,
+            "price": {
+              "amount": null,
+              "currencyCode": "EUR"
+            }
+          }
+        ]
+      },
+      "metafields": [
+        {
+          "namespace": "atelie",
+          "key": "madeira",
+          "value": "[espécie]"
+        },
+        {
+          "namespace": "atelie",
+          "key": "dimensoes",
+          "value": "[C×L×A cm]"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/Product/1002",
+      "handle": "mesa-de-centro-resina-azul",
+      "title": "Mesa de Centro Resina Azul",
+      "productType": "centro",
+      "description": "[Descrição da peça]",
+      "availableForSale": true,
+      "totalInventory": 1,
+      "tags": [
+        "peca-unica"
+      ],
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": null,
+          "currencyCode": "EUR"
+        }
+      },
+      "featuredImage": {
+        "url": "/images/mesa-resina-azul.webp",
+        "altText": "Mesa de centro em madeira maciça de tom avermelhado com faixa central de resina azul e pés trapezoidais em madeira, numa sala com sofá e tapete",
+        "width": 1199,
+        "height": 1312
+      },
+      "images": {
+        "nodes": [
+          {
+            "url": "/images/mesa-resina-azul.webp",
+            "altText": "Mesa de centro em madeira maciça de tom avermelhado com faixa central de resina azul e pés trapezoidais em madeira, numa sala com sofá e tapete",
+            "width": 1199,
+            "height": 1312
+          }
+        ]
+      },
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/2002",
+            "title": "Default Title",
+            "availableForSale": true,
+            "quantityAvailable": 1,
+            "price": {
+              "amount": null,
+              "currencyCode": "EUR"
+            }
+          }
+        ]
+      },
+      "metafields": [
+        {
+          "namespace": "atelie",
+          "key": "madeira",
+          "value": "[espécie]"
+        },
+        {
+          "namespace": "atelie",
+          "key": "dimensoes",
+          "value": "[C×L×A cm]"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/Product/1003",
+      "handle": "mesa-resina-magenta",
+      "title": "Mesa Resina Magenta",
+      "productType": "[categoria]",
+      "description": "[Descrição da peça]",
+      "availableForSale": true,
+      "totalInventory": 1,
+      "tags": [
+        "peca-unica"
+      ],
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": null,
+          "currencyCode": "EUR"
+        }
+      },
+      "featuredImage": {
+        "url": "/images/mesa-resina-magenta.webp",
+        "altText": "Mesa em madeira maciça clara com veio central irregular de resina magenta e pés em aço preto, sobre chão de mármore",
+        "width": 1086,
+        "height": 1448
+      },
+      "images": {
+        "nodes": [
+          {
+            "url": "/images/mesa-resina-magenta.webp",
+            "altText": "Mesa em madeira maciça clara com veio central irregular de resina magenta e pés em aço preto, sobre chão de mármore",
+            "width": 1086,
+            "height": 1448
+          }
+        ]
+      },
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/2003",
+            "title": "Default Title",
+            "availableForSale": true,
+            "quantityAvailable": 1,
+            "price": {
+              "amount": null,
+              "currencyCode": "EUR"
+            }
+          }
+        ]
+      },
+      "metafields": [
+        {
+          "namespace": "atelie",
+          "key": "madeira",
+          "value": "[espécie]"
+        },
+        {
+          "namespace": "atelie",
+          "key": "dimensoes",
+          "value": "[C×L×A cm]"
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/Product/1004",
+      "handle": "mesa-de-centro-resina-verde-agua",
+      "title": "Mesa de Centro Resina Verde-Água",
+      "productType": "centro",
+      "description": "[Descrição da peça]",
+      "availableForSale": true,
+      "totalInventory": 1,
+      "tags": [
+        "peca-unica"
+      ],
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": null,
+          "currencyCode": "EUR"
+        }
+      },
+      "featuredImage": {
+        "url": "/images/mesa-centro-resina-verde-agua.webp",
+        "altText": "Mesa de centro em madeira maciça de tom avermelhado com dois veios de resina verde-água translúcida e base trapezoidal em madeira, sobre tapete de sisal numa sala com sofá e luz natural",
+        "width": 1312,
+        "height": 1199
+      },
+      "images": {
+        "nodes": [
+          {
+            "url": "/images/mesa-centro-resina-verde-agua.webp",
+            "altText": "Mesa de centro em madeira maciça de tom avermelhado com dois veios de resina verde-água translúcida e base trapezoidal em madeira, sobre tapete de sisal numa sala com sofá e luz natural",
+            "width": 1312,
+            "height": 1199
+          }
+        ]
+      },
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/2004",
+            "title": "Default Title",
+            "availableForSale": true,
+            "quantityAvailable": 1,
+            "price": {
+              "amount": null,
+              "currencyCode": "EUR"
+            }
+          }
+        ]
+      },
+      "metafields": [
+        {
+          "namespace": "atelie",
+          "key": "madeira",
+          "value": "[espécie]"
+        },
+        {
+          "namespace": "atelie",
+          "key": "dimensoes",
+          "value": "[C×L×A cm]"
+        }
+      ]
+    }
+  ]
+}
